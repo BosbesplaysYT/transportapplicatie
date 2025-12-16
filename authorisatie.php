@@ -26,7 +26,9 @@ $aantal=$result->rowCount();
 if ($aantal==1){ 
     while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
         $rol = $row['naam'];
+        $id = $row['id'];
     }
+    $_SESSION['userid']=$id;
     $_SESSION['inlognaam']=$inlognaam;
     $_SESSION['wachtwoord']=$wachtwoord;
     $_SESSION['rol']=$rol;

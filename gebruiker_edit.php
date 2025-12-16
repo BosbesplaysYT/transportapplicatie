@@ -42,6 +42,10 @@ $gebruiker = $stmt->fetch(PDO::FETCH_ASSOC);
 
     echo '<header class="head"><p>Gebruiker bewerken</p></header>';
     echo '<main class="main-content">';
+    if ((int)$gebruikerId === (int)$_SESSION['userid']) {
+        echo "<p style='color:orange; text-align:center;'>De geselecteerde gebruiker ben je zelf! Let op dat dit voor problemen kan zorgen als je bijvoorbeeld je rol aanpast</p>";
+    }
+    witregel(10);
     echo '<div id="frmDetail">';
 ?>
 
