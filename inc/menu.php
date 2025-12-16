@@ -22,7 +22,7 @@ switch ($authRol) {
                             <li><a href="klanten.php">Klantgegevens</a></li> 
                             <li><a href="opdrachten.php">Opdrachten</a></li> 
                             <li> 
-                                <a href="#Beheer" class="dropbtn">Beheer</a> 
+                                <a href="gebruikers.php" class="dropbtn">Beheer</a> 
                                 <ul>
                                     <li><a href="gebruiker_new.php">Nieuwe gebruiker</a></li> 
                                     <li><a href="gebruikers.php">Gebruikersoverzicht</a></li> 
