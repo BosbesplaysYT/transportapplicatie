@@ -32,7 +32,7 @@ function pg_link($num, $page_url, $sep, $page) {
     echo "<a href='{$page_url}{$sep}page={$num}'{$active}>{$num}</a>";
 }
 
-// --- ELLIPS LOGICA ---
+// maak een ellips als dat nodig is
 // Toon altijd eerste pagina
 if ($page > 3) {
     pg_link(1, $page_url, $sep, $page);

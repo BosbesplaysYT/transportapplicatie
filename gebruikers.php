@@ -94,13 +94,6 @@ require_once 'inc/database.php';
                             <a href='gebruiker_delete.php?user_id={$row['id']}' class='btn-delete'>
                                 <i class='material-icons md-24'>delete</i>
                             </a>
-                            <form action='authorisatie.php' method='POST' style='display:inline;'>
-                                <input type='hidden' name='inlognaam' value='{$row['inlognaam']}'>
-                                <input type='hidden' name='wachtwoord' value='{$row['wachtwoord']}'>
-                                <button type='submit' name='submit' class='btn-action'>
-                                    Inloggen als
-                                </button>
-                            </form>
                         </td>
 
                     </tr>
